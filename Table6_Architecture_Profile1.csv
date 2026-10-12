@@ -1,0 +1,6 @@
+name,neurons,params
+Input,2,0
+Sine 1,64,192
+Sine 2,64,4160
+Sine 3,64,4160
+Output,1,65

@@ -1,0 +1,45 @@
+profile_id: "Profile 1"
+
+input_file: "data/ERT profile 1 Pangea.xlsx"
+output_dir: "results/profile_1"
+
+hidden: 64
+n_siren_layers: 3
+w0: 5.0
+
+n_iters_max: 100
+min_iters_before_conv: 25
+conv_window: 10
+conv_tol_rel: 0.5
+conv_tol_abs: 0.05
+conv_chi2_plateau: 1.2
+target_chi2: 1.90
+chi2_floor: 1.00
+
+learning_rate: 0.005
+lambda_reg: 0.1
+adapt_lambda: true
+grad_clip: 1.0
+lambda_floor: 0.001
+lambda_ceiling: 5.0
+
+err_rel: 0.03
+err_abs: 0.000001
+
+rho_min: 1.0
+rho_max: 100000.0
+
+depth_weight_enable: true
+depth_weight_factor: 0.5
+
+min_meas_per_level: 10
+
+para_depth: 15.0
+para_max_cell: 1.0
+mesh_quality: 33.5
+trapezoid_taper: 0.55
+
+jac_update_schedule: [0, 1, 2, 3, 4, 5, 7, 9, 11, 14, 17, 20, 24, 28, 33, 38, 44, 51, 59, 68, 78, 89]
+
+train_test_split: 0.80
+split_seed: 42
